@@ -76,7 +76,7 @@ function titlesByAuthorName(authorName, authors, books) {
  * Note: assume there will never be a tie
  ****************************************************************/
 function mostProlificAuthor(authors) {
-  let prolificAuthor = authors[authors[0].books.length];
+  let prolificAuthor = authors[0];
 
   authors.forEach(author => {
     if (author.books.length > prolificAuthor.books.length) {
